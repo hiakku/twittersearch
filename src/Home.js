@@ -28,9 +28,12 @@ class Home extends React.Component {
   }
 
   operation() {
+    if (this.state.search === ''){
+      alert("NO record entered to search")
+    } else {
     this.setState({
       show: true
-    })
+    })}
   }
   
   loadMore() {
